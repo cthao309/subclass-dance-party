@@ -19,9 +19,13 @@ body, a:link, a:visited, a:active{
   z-index: 100;
 }
 .topbar{
-  height:32px;
+  height: 32px;
   background-color: #555;
   z-index: 100;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 .title{
   background-color: #777;
@@ -71,4 +75,17 @@ body, a:link, a:visited, a:active{
 .dancerImg {
   width: 100px;
   height: auto;
+}
+
+.dancerBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.addDancerButton:hover,
+.lineUpDanceBtn:hover,
+.stopStalkerBtn:hover {
+  color: purple;
 }
