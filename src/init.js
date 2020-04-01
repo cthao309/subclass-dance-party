@@ -1,18 +1,11 @@
 $(document).ready(function() {
   window.dancers = [];
 
-<<<<<<< HEAD
-  let windowHeight = $("body").height() - 100;
-  let windowWidth = $("body").width() - 50;
-
-||||||| merged common ancestors
-=======
   let limitCreationOfStalker = 1;
   let spaceBetweenDancers = 125;
   let stalkerCount = 0;
   let dancerWidth = 100;
 
->>>>>>> c4a7433a062a6f71bc148c5ebb2bbe79e91f6173
   $('.addDancerButton').on('click', function(event) {
     /* This function sets up the click handlers for the create-dancer
      * buttons on dancefloor.html. You should only need to make one small change to it.
