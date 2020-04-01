@@ -1,13 +1,17 @@
 var MakeBounceDancer = function(top, left, timeBetweenSteps) {
   this.oldStep = MakeDancer.prototype.step;
   MakeDancer.call(this, top, left, timeBetweenSteps);
+  $(this.$node).toggleClass('dancer bounceDancer');
+  $(this.$node).addClass('animated');
+  $(this.$node).prepend('<img class = "dancerImg" src = "baby_dance.gif" />');
 
-  this.$node = $('<span class="dancer"><img class="animated bounceDancer" src="images/girl_dance.gif" title="" /></span>');
+
 }
 
 MakeBounceDancer.prototype = Object.create(MakeDancer.prototype);
 MakeBounceDancer.prototype.constructor = MakeBounceDancer;
-
 MakeBounceDancer.prototype.step = function() {
   this.oldStep();
+
+
 }
