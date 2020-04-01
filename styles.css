@@ -76,3 +76,10 @@ body, a:link, a:visited, a:active{
   animation-fill-mode: both;
   animation-iteration-count: infinite;
 }
+
+.dancerBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
